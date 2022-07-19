@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Mingzat&family=Play:wght@700&family=Raleway:wght@100&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 3px;
+   box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+display: none;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+
+h3{
+    letter-spacing: 0.4rem;
+    background-color: white;
+    border-bottom: solid 2px black;
+    font-family: Raleway;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+h3:hover{
+    background-color: black;
+    color: white;
+    transition: 0.7s;
+    opacity: 0.7;
+   
+}
+
+nav a{
+    margin-left: 600px;
+}
+
+
+nav a:hover {
+    border-bottom: solid 1px black;  
+}
+
+nav a:link{
+    font-family: Raleway;
+    color: black ;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.container{
+    width: 500px;
+    height: auto;
+    background-color: black;
+    border: solid 5px black;
+    overflow: hidden;
+    
+}
+
+.container .imagem{
+   width: 500%;
+   animation-name: cu;
+   animation-duration: 25s;
+   animation-iteration-count: infinite; 
+   background-color: white;
+}
+
+.container .imagem img{
+    width: 19.9%;
+    background-color: white;
+}
+
+.sexo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    background-color: black;
+}
+
+.sexo:hover{
+    background-color: white;
+    transition: 0.7s;
+    
+  
+}
+
+.square{
+    position: absolute;
+    left: 1200px;
+    transform: rotateZ(-140deg);
+    width: 5px;
+    height: 708px;
+}
+
+.square-tl{
+    position: absolute;
+    left: 325px;
+    transform: rotateZ(140deg);
+    width: 5px;
+    height: 700px;
+}
+
+.nike{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+    margin-right: 10px;
+    font-family: Raleway;
+}
+
+.nike img{
+    width: 150px;
+    height: 150px;
+    box-shadow: 2px 2px 2px gray;
+    border-radius: 4px;
+    
+}
+
+.nike img:hover{
+    transform: scale(1.075);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#musch{
+    display : flex;
+    align-items: center;
+    width: 99.5%;
+    height: 500px;
+    background-color: black;
+    color: white;
+
+}
+
+#musch img{
+    position: absolute;
+    left: 1600px;
+    height: 300px;
+    width: 300px;
+}
+
+#uau{
+    position: absolute;
+    left: 900px;
+    color: white ;
+    font-family: Raleway;
+    font-size: 30px;
+    text-align: center;
+    font-style: oblique; 
+    background: black;
+    width: 500px;
+}
+@keyframes cu{
+ 0% { margin-left: 0%;}
+ 20% { margin-left: 0%;}
+ 25% { margin-left: -100%;}
+ 45% { margin-left: -100%;}
+ 50% { margin-left: -200%;}
+ 70% { margin-left: -200%;}
+ 95% { margin-left: -300%;}
+ 100% { margin-left: -300%;}
+}
+
+.secao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Raleway;
+    font-weight: bold;
+    text-align: center;
+}
+
+.secao div{
+    width: 350px;
+    overflow: hidden;
+}
+
+.secao div img{
+    width: 500px;
+    height: 500px;
+}
+
+.secao div:hover{
+    width: 500px;
+    height: 500px;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+footer{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family: Raleway;
+    margin-top: 100px;
+  
+    /* animation-name: slash;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;  */
+}
+
+
+footer h1{
+   font-family: Raleway;
+   font-size: 20px;
+   color: white;
+   z-index: 1;
+   margin-right: 10px;
+    z-index: 2;
+}
+
+footer div{
+    position: absolute;
+    top: 1800px;
+    height: 550px;
+    width: 100%;
+    background-size: 100px;
+    background-image: url(./imagens/adidas-logo-branco.png);
+    opacity: 0.2;
+    animation-name: slash;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes slash{
+    0%{
+        background-position-y: -300px;
+    }
+    100%{
+        background-position-y: -600px ;
+
+    }
+}
+
